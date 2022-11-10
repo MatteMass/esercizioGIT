@@ -11,13 +11,22 @@ namespace Wpf_esercizioGIT
         internal string Titolo { get; set; }
         internal string Autore { get; set; }
 
-        internal double Durata { get; set; }
+        internal int Durata { get; set; }
 
         internal Brano()
         {
-            Titolo = 
-                Autore =
-                Durata =
+            this.Titolo = Titolo;
+            this.Autore = Autore;
+            this.Durata = Durata;
         }
+       internal string toString()
+        {
+            return Titolo + " " + Autore + " " + Durata.ToString();
+        }
+        internal bool shortSong()
+        {
+            int durataData = Console.ReadLine(); //non ho fatto in tempo perché sono lento
+        }
+
     }
 }
